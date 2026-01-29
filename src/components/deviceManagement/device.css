@@ -1,0 +1,71 @@
+/* Device Management Component Styles */
+
+/* Light Theme Overrides - Matching Location Page */
+[data-theme="light"] table {
+  color: #111827;
+  background-color: #ffffff;
+}
+
+[data-theme="light"] thead {
+  background-color: #2c3e50 !important;
+  color: #ffffff !important;
+}
+
+[data-theme="light"] thead th {
+  color: #ffffff !important;
+}
+
+[data-theme="light"] tbody tr {
+  color: #111827 !important;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+[data-theme="light"] tbody tr:nth-child(even) {
+  background-color: #f9fafb;
+}
+
+[data-theme="light"] tbody tr:hover {
+  background-color: #f3f4f6 !important;
+}
+
+[data-theme="light"] tbody td {
+  color: #111827 !important;
+}
+
+[data-theme="light"] .bg-\[\#0f172b\] {
+  background-color: #ffffff !important;
+  color: #111827;
+  border: 1px solid #e5e7eb;
+}
+
+[data-theme="light"] select,
+[data-theme="light"] input {
+  background-color: #ffffff;
+  border-color: #d1d5db;
+  color: #111827;
+}
+
+[data-theme="light"] .border-gray-600,
+[data-theme="light"] .border-gray-700 {
+  border-color: #d1d5db !important;
+}
+
+[data-theme="light"] .text-white {
+  color: #111827 !important;
+}
+
+[data-theme="light"] thead .text-white,
+[data-theme="light"] thead th {
+  color: #ffffff !important;
+}
+
+[data-theme="light"] .hover\:bg-gray-700:hover,
+[data-theme="light"] .hover\:bg-\[\#1a253f\]:hover {
+  background-color: #f3f4f6 !important;
+}
+
+[data-theme="light"] tfoot {
+  background-color: #ffffff;
+  border-top: 1px solid #e5e7eb;
+}

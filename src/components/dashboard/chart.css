@@ -1,0 +1,246 @@
+@media (min-width: 300px) {
+  .chart-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .col-container-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .col-container-2 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .left-chart-1 {
+    background-color: #0f172b;
+    grid-column: span 1 / span 1;
+    border-radius: 12px;
+  }
+
+  .right-chart-1 {
+    background-color: #0f172b;
+    grid-column: span 1 / span 1;
+    border-radius: 12px;
+  }
+
+  .left-chart-2 {
+    background-color: #0f172b;
+    grid-column: span 1 / span 1;
+    border-radius: 12px;
+  }
+
+  .right-chart-2 {
+    background-color: #0f172b;
+    grid-column: span 1 / span 1;
+    border-radius: 12px;
+  }
+  .chart-height {
+    height: 350px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .chart-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .col-container-1 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .col-container-2 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .left-chart-1 {
+    background-color: #0f172b;
+    grid-column: span 3 / span 3;
+    border-radius: 12px;
+  }
+
+  .right-chart-1 {
+    background-color: #0f172b;
+    grid-column: span 2 / span 2;
+    border-radius: 12px;
+  }
+
+  .left-chart-2 {
+    background-color: #0f172b;
+    grid-column: span 3 / span 3;
+    border-radius: 12px;
+  }
+
+  .right-chart-2 {
+    background-color: #0f172b;
+    grid-column: span 3 / span 3;
+    border-radius: 12px;
+  }
+  .chart-height {
+    height: 400px !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .chart-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .col-container-1 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .col-container-2 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .left-chart-1 {
+    background-color: #0f172b;
+    grid-column: span 3 / span 3;
+    border-radius: 12px;
+  }
+
+  .right-chart-1 {
+    background-color: #0f172b;
+    grid-column: span 1 / span 1;
+    border-radius: 12px;
+  }
+
+  .left-chart-2 {
+    background-color: #0f172b;
+    grid-column: span 2 / span 2;
+    border-radius: 12px;
+  }
+
+  .right-chart-2 {
+    background-color: #0f172b;
+    grid-column: span 3 / span 3;
+    border-radius: 12px;
+  }
+  
+  .chart-height {
+    height: 380px !important;
+  }
+}
+
+@media (min-width: 1536px) {
+  .chart-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .col-container-1 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .col-container-2 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .left-chart-1 {
+    background-color: #0f172b;
+    grid-column: span 3 / span 3;
+    border-radius: 12px;
+  }
+
+  .right-chart-1 {
+    background-color: #0f172b;
+    grid-column: span 1 / span 1;
+    border-radius: 12px;
+  }
+
+  .left-chart-2 {
+    background-color: #0f172b;
+    grid-column: span 2 / span 2;
+    border-radius: 12px;
+  }
+
+  .right-chart-2 {
+    background-color: #0f172b;
+    grid-column: span 3 / span 3;
+    border-radius: 12px;
+  }
+  .chart-height {
+    height: 450px !important;
+  }
+}
+
+@media (min-width: 2500px) {
+  .chart-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .col-container-1 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 24px;
+  }
+
+  .col-container-2 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 24px;
+  }
+
+  .left-chart-1 {
+    background-color: #0f172b;
+    grid-column: span 4 / span 4;
+    border-radius: 12px;
+  }
+
+  .right-chart-1 {
+    background-color: #0f172b;
+    grid-column: span 2 / span 2;
+    border-radius: 12px;
+  }
+
+  .left-chart-2 {
+    background-color: #0f172b;
+    grid-column: span 2 / span 4;
+    border-radius: 12px;
+    height: 350px;
+  }
+
+  .right-chart-2 {
+    background-color: #0f172b;
+    grid-column: span 4 / span 2;
+    border-radius: 12px;
+  }
+  .chart-height {
+    height: 500px !important;
+  }
+}
+.leaflet-map-full {
+  height: 100vh !important;  /* full screen height */
+  width: 100% !important;
+}
+/* Custom popup styling for better visibility */
+.leaflet-popup-content-wrapper {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.leaflet-popup-tip {
+  background: #ffffff;
+}
+
+.custom-popup .leaflet-popup-content {
+  margin: 12px;
+  font-size: 14px;
+  line-height: 1.4;
+}

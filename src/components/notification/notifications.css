@@ -1,0 +1,530 @@
+/* Notification Component Styles */
+
+.pagination-btn {
+  padding: 0.5rem;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0.375rem;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.pagination-btn:hover:not(:disabled) {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.pagination-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.selection-item {
+  padding: 10px 20px;
+  background-color: rgba(15, 23, 43, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 9999px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  color: white;
+}
+
+.selection-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.selection-item:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  border-color: rgba(99, 102, 241, 0.5);
+}
+
+/* Light Theme Overrides for Notifications */
+[data-theme="light"] .bg-slate-800 {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  border-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+[data-theme="light"] .bg-slate-700\/50 {
+  background-color: rgba(243, 244, 246, 0.8) !important;
+}
+
+[data-theme="light"] .border-slate-700 {
+  border-color: rgba(0, 0, 0, 0.15) !important;
+}
+
+[data-theme="light"] .border-l-gray-600 {
+  border-left-color: rgba(0, 0, 0, 0.2) !important;
+}
+
+[data-theme="light"] .text-white {
+  color: #111827 !important;
+}
+
+[data-theme="light"] .text-gray-300 {
+  color: #4b5563 !important;
+}
+
+[data-theme="light"] .text-gray-400 {
+  color: #6b7280 !important;
+}
+
+[data-theme="light"] .selection-item {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-color: rgba(0, 0, 0, 0.2);
+  color: #111827;
+}
+
+[data-theme="light"] .selection-item:hover {
+  background-color: rgba(0, 0, 0, 0.03);
+  border-color: rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="light"] .selection-item option {
+  background-color: #ffffff;
+  color: #111827;
+}
+
+[data-theme="light"] .bg-\[\#0f172b\] {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  color: #111827 !important;
+}
+
+[data-theme="light"] .border-gray-600,
+[data-theme="light"] .border-gray-700 {
+  border-color: rgba(0, 0, 0, 0.15) !important;
+}
+
+[data-theme="light"] .pagination-btn {
+  background-color: rgba(0, 0, 0, 0.05);
+  border-color: rgba(0, 0, 0, 0.2);
+  color: #111827;
+}
+
+[data-theme="light"] .pagination-btn:hover:not(:disabled) {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Notification Card Styling in Light Mode */
+[data-theme="light"] .bg-blue-500\/5 {
+  background-color: rgba(99, 102, 241, 0.08) !important;
+}
+
+[data-theme="light"] .border-l-blue-500 {
+  border-left-color: #6366f1 !important;
+}
+
+/* Keep severity and status badges colored */
+[data-theme="light"] .bg-red-500,
+[data-theme="light"] .bg-orange-500,
+[data-theme="light"] .bg-yellow-500,
+[data-theme="light"] .bg-blue-500,
+[data-theme="light"] .bg-green-500,
+[data-theme="light"] .bg-gray-500,
+[data-theme="light"] .bg-red-600,
+[data-theme="light"] .bg-purple-600,
+[data-theme="light"] .bg-blue-600,
+[data-theme="light"] .bg-red-600 {
+  color: white !important;
+}
+
+/* Statistics cards in light mode */
+[data-theme="light"] .bg-red-500\/10 {
+  background-color: rgba(239, 68, 68, 0.08) !important;
+}
+
+[data-theme="light"] .bg-green-500\/10 {
+  background-color: rgba(34, 197, 94, 0.08) !important;
+}
+
+[data-theme="light"] .bg-gray-500\/10 {
+  background-color: rgba(107, 114, 128, 0.08) !important;
+}
+
+[data-theme="light"] .bg-red-600\/10 {
+  background-color: rgba(220, 38, 38, 0.08) !important;
+}
+
+[data-theme="light"] .bg-orange-500\/10 {
+  background-color: rgba(249, 115, 22, 0.08) !important;
+}
+
+[data-theme="light"] .bg-yellow-500\/10 {
+  background-color: rgba(234, 179, 8, 0.08) !important;
+}
+
+[data-theme="light"] .bg-blue-500\/10 {
+  background-color: rgba(59, 130, 246, 0.08) !important;
+}
+
+[data-theme="light"] .border-red-500\/20,
+[data-theme="light"] .border-green-500\/20,
+[data-theme="light"] .border-gray-500\/20,
+[data-theme="light"] .border-red-600\/20,
+[data-theme="light"] .border-orange-500\/20,
+[data-theme="light"] .border-yellow-500\/20,
+[data-theme="light"] .border-blue-500\/20 {
+  border-color: currentColor !important;
+  opacity: 0.25;
+}
+
+/* Keep colored text in stat cards */
+[data-theme="light"] .text-red-400,
+[data-theme="light"] .text-green-400,
+[data-theme="light"] .text-red-500,
+[data-theme="light"] .text-orange-500,
+[data-theme="light"] .text-yellow-500,
+[data-theme="light"] .text-blue-500 {
+  /* Colors stay as is for statistics */
+}
+
+/* Hover states */
+[data-theme="light"] .hover\:bg-slate-700\/50:hover {
+  background-color: rgba(243, 244, 246, 0.8) !important;
+}
+
+[data-theme="light"] .hover\:bg-gray-700:hover {
+  background-color: rgba(0, 0, 0, 0.08) !important;
+  color: #111827 !important;
+}
+
+[data-theme="light"] .bg-gray-600 {
+  background-color: rgba(75, 85, 99, 0.9) !important;
+}
+
+/* notifications.css */
+
+/* Custom styling for severity filter dropdown */
+select.selection-item option {
+  background-color: #0f172b !important;
+  padding: 8px !important;
+}
+
+select.selection-item option[value="critical"] {
+  color: #f87171 !important;
+}
+
+select.selection-item option[value="high"] {
+  color: #fb923c !important;
+}
+
+select.selection-item option[value="medium"] {
+  color: #facc15 !important;
+}
+
+select.selection-item option[value="low"] {
+  color: #60a5fa !important;
+}
+
+/* Status colors in dropdown */
+select.selection-item option[value="unread"] {
+  color: #f87171 !important;
+}
+
+select.selection-item option[value="read"] {
+  color: #4ade80 !important;
+}
+
+select.selection-item option[value="dismissed"] {
+  color: #9ca3af !important;
+}
+
+/* Pagination buttons */
+.pagination-btn {
+  @apply p-2 rounded-md bg-slate-800 hover:bg-slate-700 text-white disabled:opacity-50 disabled:cursor-not-allowed transition-colors;
+}
+
+/* Notification card hover effects */
+.notification-card {
+  transition: all 0.2s ease-in-out;
+}
+
+.notification-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Statistics cards */
+.stat-card {
+  backdrop-filter: blur(8px);
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: scale(1.05);
+}
+
+/* Search input */
+.selection-item {
+  @apply px-4 py-3 bg-slate-800 border border-slate-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent;
+}
+
+/* Feedback animation */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.3s ease-out;
+}
+/* notifications.css */
+
+/* Statistics Cards */
+.stat-card {
+  @apply p-4 rounded-lg border shadow-sm backdrop-blur-sm transition-all hover:scale-105;
+}
+
+/* Notification Cards */
+.notification-card {
+  @apply transition-all duration-200 hover:shadow-lg;
+}
+
+[data-theme="light"] .notification-card:hover {
+  @apply shadow-md;
+}
+
+[data-theme="dark"] .notification-card:hover {
+  @apply shadow-lg shadow-black/10;
+}
+
+/* Pagination Buttons */
+.pagination-btn {
+  @apply p-2 rounded-md border transition-colors disabled:opacity-50 disabled:cursor-not-allowed;
+}
+
+/* Selection Items */
+.selection-item {
+  @apply px-4 py-2.5 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all;
+}
+
+/* Feedback Animation */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.3s ease-out;
+}
+
+/* Custom scrollbar for notification list */
+.alert-table-container {
+  @apply max-h-[calc(100vh-350px)] overflow-y-auto;
+}
+
+[data-theme="light"] .alert-table-container {
+  scrollbar-color: #cbd5e1 #f1f5f9;
+}
+
+[data-theme="dark"] .alert-table-container {
+  scrollbar-color: #475569 #1e293b;
+}
+
+.alert-table-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.alert-table-container::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+[data-theme="light"] .alert-table-container::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+[data-theme="dark"] .alert-table-container::-webkit-scrollbar-track {
+  background: #1e293b;
+}
+
+.alert-table-container::-webkit-scrollbar-thumb {
+  @apply rounded-full;
+}
+
+[data-theme="light"] .alert-table-container::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+}
+
+[data-theme="dark"] .alert-table-container::-webkit-scrollbar-thumb {
+  background: #475569;
+}
+
+.alert-table-container::-webkit-scrollbar-thumb:hover {
+  @apply cursor-pointer;
+}
+
+[data-theme="light"] .alert-table-container::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+[data-theme="dark"] .alert-table-container::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
+
+/* Badge animations */
+.badge-animate {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+/* Unread notification indicator */
+.notification-unread {
+  animation: unread-pulse 3s ease-in-out infinite;
+}
+
+@keyframes unread-pulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(59, 130, 246, 0);
+  }
+  50% {
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.3);
+  }
+}
+
+/* notifications.css */
+
+/* Statistics Cards */
+.stat-card {
+  @apply p-4 rounded-lg border shadow-sm backdrop-blur-sm transition-all hover:scale-105;
+}
+
+/* Notification Cards */
+.notification-card {
+  @apply transition-all duration-200 hover:shadow-lg;
+}
+
+[data-theme="light"] .notification-card:hover {
+  @apply shadow-md;
+}
+
+[data-theme="dark"] .notification-card:hover {
+  @apply shadow-lg shadow-black/10;
+}
+
+/* Pagination Buttons */
+.pagination-btn {
+  @apply p-2 rounded-md border transition-colors disabled:opacity-50 disabled:cursor-not-allowed;
+}
+
+/* Selection Items */
+.selection-item {
+  @apply px-4 py-2.5 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all;
+}
+
+/* Feedback Animation */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.3s ease-out;
+}
+
+/* Custom scrollbar for notification list */
+.alert-table-container {
+  @apply max-h-[calc(100vh-350px)] overflow-y-auto;
+}
+
+[data-theme="light"] .alert-table-container {
+  scrollbar-color: #cbd5e1 #f1f5f9;
+}
+
+[data-theme="dark"] .alert-table-container {
+  scrollbar-color: #475569 #1e293b;
+}
+
+.alert-table-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.alert-table-container::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+[data-theme="light"] .alert-table-container::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+[data-theme="dark"] .alert-table-container::-webkit-scrollbar-track {
+  background: #1e293b;
+}
+
+.alert-table-container::-webkit-scrollbar-thumb {
+  @apply rounded-full;
+}
+
+[data-theme="light"] .alert-table-container::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+}
+
+[data-theme="dark"] .alert-table-container::-webkit-scrollbar-thumb {
+  background: #475569;
+}
+
+.alert-table-container::-webkit-scrollbar-thumb:hover {
+  @apply cursor-pointer;
+}
+
+[data-theme="light"] .alert-table-container::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+[data-theme="dark"] .alert-table-container::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
+
+/* Badge animations */
+.badge-animate {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+/* Unread notification indicator */
+.notification-unread {
+  animation: unread-pulse 3s ease-in-out infinite;
+}
+
+@keyframes unread-pulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(59, 130, 246, 0);
+  }
+  50% {
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.3);
+  }
+}

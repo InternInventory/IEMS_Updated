@@ -1,0 +1,138 @@
+{
+  "IR": 0,//IR Status
+  "MOD": 0,//Modbus Status
+  "RELAY": 0,//Relay Status
+  "TempIP": 32,// Avg Temp
+  "Motion": 100,// Avg Motion
+  "BiBug": [ //BiBug Parameter
+    {
+      "id": 0,
+      "Temp": 0,
+      "Hum": 0,
+      "IAQ": 0,
+      "Motion": 0,
+      "Ping": 0
+    },
+    {
+      "id": 1,
+      "Temp": 0,
+      "Hum": 0,
+      "IAQ": 0,
+      "Motion": 0,
+      "Ping": 0
+    },
+    {
+      "id": 2,
+      "Temp": 0,
+      "Hum": 0,
+      "IAQ": 0,
+      "Motion": 0,
+      "Ping": 0
+    },
+    {
+      "id": 3,
+      "Temp": 0,
+      "Hum": 0,
+      "IAQ": 0,
+      "Motion": 0,
+      "Ping": 0
+    },
+    {
+      "id": 4,
+      "Temp": 0,
+      "Hum": 0,
+      "IAQ": 0,
+      "Motion": 0,
+      "Ping": 0
+    }
+  ],
+  "SSID": "BuildINT1234",//SSID
+  "PASS": "buildint@2021",//PASSWORD
+  "IP_NEON": "10.64.48.170",//IP SET FOR ALLOCATING STATIC IP
+  "DHCP": "ON", //STATIC/DYNAMIC
+  "Mqtt_RW": "ON",// read,write
+  "Mqtt_P": "OFF",//Periodic
+  "Mqtt_User": "mqtt_buildint",
+  "Mqtt_Pass": "mqtt_buildint_$$2023",
+  "Topic": "Setting/XX:XX:XX:XX:XX:XX",
+  "Response": "Response/XX:XX:XX:XX:XX:XX",
+  "comTopic": "Buildint/Neon/all/control/Set",
+  "Mqtt_Server": "15.206.230.32",
+  "Mqtt_Port": 1883,
+  "TCP_RW": "OFF",// read,write
+  "TCP_P": "OFF",//Periodic
+  "TCPSRV": "",//for any remote tcp server
+  "TCPPORT": "",//for any remote tcp port
+  "TCPINTP": "5000",internal tcp server port
+  "HTTP_P": "ON",//Periodic
+  "HTTP_URL": "",//HTTP URL
+  "HB": 120,// Periodic Delay
+  "BiBug_RW": "MQTT", // BiBug read write Method
+  "BiBug_Count": 5,// No.of Bi-Bug included
+  "BBGPT": 30, //BiBug delay time for process signal
+  "BI-BUG_Setting": "BI-BUG_Setting/XX:XX:XX:XX:XX:XX",// Bibug topic for Mqtt
+  "AUTO": "OFF", AUTO/MANUAL
+  "Schedule": [//SCHEDULE
+    {
+      "TYPE": "Custom",
+      "CONTROL": "",
+      "STT": "00:00:00",
+      "SFT": "00:00:00",
+      "DAYS": "",
+      "DATE": "",
+      "P_DATE": ""
+    },
+    {
+      "TYPE": "Holiday",
+      "CONTROL": "",
+      "STT": "00:00:00",
+      "SFT": "00:00:00",
+      "DAYS": "",
+      "DATE": "",
+      "P_DATE": ""
+    },
+    {
+      "TYPE": "Regular",
+      "CONTROL": "RELAY",
+      "STT": "00:00:00",
+      "SFT": "00:00:00",
+      "DAYS": "",
+      "DATE": "2025-07-15>2025-07-25",
+      "P_DATE": ""
+    },
+    {
+      "TYPE": "Regular",
+      "CONTROL": "",
+      "STT": "00:00:00",
+      "SFT": "00:00:00",
+      "DAYS": "",
+      "DATE": "",
+      "P_DATE": ""
+    },
+    {
+      "TYPE": "Regular",
+      "CONTROL": "",
+      "STT": "00:00:00",
+      "SFT": "00:00:00",
+      "DAYS": "",
+      "DATE": "",
+      "P_DATE": ""
+    }
+  ],
+  "MXT": 28,//Max Temp
+  "MNT": 20,//Min Temp
+  "TS": "ON",//Temp EN/Disable
+  "MXM": 60,//Motion Treshold
+  "MS": "ON",//Motion EN/Disable
+  "FREQ": 30000,//Vfd Frequency
+  "FREQOFFSET": 10000,// Vfd Frequency Offset
+  "IRTEMP": 28,//IR Temp
+  "IRTEMPOFFSET": 10,//IR Temp Offset
+  "MANTEMP": 24, // Manual IR Temp
+  "Remote_Make": "BLUESTAR",
+  "SMARTDELAY": 30, // smart relay delay
+  "SMACTION": "OFF",// smart action EN/Disable
+  "MANRELAY": "", // Manual Relay ON/OFF
+  "MANIR": "",// Manual IR ON/OFF
+  "MANMODBUS": ""// Manual Modbus ON/OFF
+}

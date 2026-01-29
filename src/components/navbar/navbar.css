@@ -1,0 +1,532 @@
+@media (min-width: 300px) {
+  .side-bar {
+    top: 48px !important;
+    left: 0px;
+    bottom: 0px;
+    width: min(80vw, 320px) !important;
+    height: calc(100vh - 48px) !important;
+    position: fixed !important;
+  }
+
+
+  .nav-icon {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .nav-label {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .dropdown-arrow {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .profile-dropdown-container {
+    user-select: none;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+  }
+
+  .profile-dropdown-user {
+    display: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .profile-dropdown-role {
+    display: none;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .profile-dropdown-arrow{
+    display: none !important;
+  }
+
+  .profile-dropdown-content{
+    position: absolute;
+    right: 0;
+    margin-top: 8px;
+    width: 160px;
+    z-index: 50px;
+  }
+}
+
+@media (min-width: 768px) {
+  .side-bar {
+    top: 48px !important;
+    left: 0px;
+    bottom: 0px;
+    width: 280px !important;
+    height: calc(100vh - 48px) !important;
+    position: fixed !important;
+  }
+
+  .nav-icon {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .nav-label {
+    font-size: 0.75rem;
+    line-height: 16px;
+  }
+
+  .profile-dropdown-container {
+    user-select: none;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    cursor: pointer;
+  }
+
+  .profile-dropdown-user {
+    display: block;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .profile-dropdown-role {
+    display: block;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .profile-dropdown-arrow{
+    display: block !important;
+  }
+  
+  .profile-dropdown-content{
+    position: absolute;
+    right: 0;
+    margin-top: 8px;
+    width: 160px;
+    z-index: 50px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .side-bar {
+    top: 64px !important;
+    left: 0px;
+    bottom: 0px;
+    width: 280px !important;
+    height: calc(100vh - 64px) !important;
+    position: fixed !important;
+  }
+
+  .nav-icon {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .nav-label {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .profile-dropdown-container {
+    user-select: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+  }
+
+  .profile-dropdown-user {
+    display: block;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .profile-dropdown-role {
+    display: block;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .profile-dropdown-content{
+    position: absolute;
+    right: 0;
+    margin-top: 8px;
+    width: 192px;
+    z-index: 50px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .min-md-open {
+    padding-left: 300px;
+  }
+
+  .side-bar {
+    top: 64px !important;
+    left: 0px;
+    bottom: 0px;
+    width: 300px !important;
+    height: calc(100vh - 64px) !important;
+    position: fixed !important;
+  }
+
+  .nav-icon {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .nav-label {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .profile-dropdown-container {
+    user-select: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+  }
+
+  .profile-dropdown-user {
+    display: block;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .profile-dropdown-role {
+    display: block;
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .min-md-open {
+    padding-left: 320px;
+  }
+
+  .side-bar {
+    top: 64px !important;
+    left: 0px;
+    bottom: 0px;
+    width: 320px !important;
+    height: calc(100vh - 64px) !important;
+    position: fixed !important;
+  }
+
+  .nav-icon {
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  .nav-label {
+    font-size: 17px;
+    line-height: 25px;
+  }
+
+  .dropdown-arrow {
+    font-size: 24px;
+    line-height: 26px;
+  }
+
+  .profile-dropdown-container {
+    user-select: none;
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    cursor: pointer;
+  }
+
+  .profile-dropdown-user {
+    display: block;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 26px;
+  }
+
+  .profile-dropdown-role {
+    display: block;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .profile-dropdown-content{
+    position: absolute;
+    right: 0;
+    margin-top: 8px;
+    width: 260px;
+    z-index: 50px;
+  }
+}
+
+@media (min-width: 2000px) {
+  .min-md-open {
+    padding-left: 360px;
+  }
+
+  .side-bar {
+    top: 64px !important;
+    left: 0px;
+    bottom: 0px;
+    width: 360px !important;
+    height: calc(100vh - 64px) !important;
+    position: fixed !important;
+  }
+
+  .nav-icon {
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  .nav-label {
+    font-size: 19px;
+    line-height: 27px;
+  }
+
+  .dropdown-arrow {
+    font-size: 24px;
+    line-height: 26px;
+  }
+
+  .profile-dropdown-container {
+    user-select: none;
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    cursor: pointer;
+  }
+
+  .profile-dropdown-user {
+    display: block;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 26px;
+  }
+
+  .profile-dropdown-role {
+    display: block;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .profile-dropdown-content{
+    position: absolute;
+    right: 0;
+    margin-top: 8px;
+    width: 300px;
+    z-index: 50px;
+  }
+}
+
+@media (min-width: 2500px) {
+  .min-md-open {
+    padding-left: 400px;
+  }
+
+  .side-bar {
+    top: 64px !important;
+    left: 0px;
+    bottom: 0px;
+    width: 400px !important;
+    height: calc(100vh - 64px) !important;
+    position: fixed !important;
+  }
+
+  .nav-icon {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .nav-label {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .dropdown-arrow {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .profile-dropdown-container {
+    user-select: none;
+    display: flex;
+    align-items: center;
+    gap: 36px;
+    cursor: pointer;
+  }
+
+  .profile-dropdown-user {
+    display: block;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .profile-dropdown-role {
+    display: block;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .profile-dropdown-content{
+    position: absolute;
+    right: 0;
+    margin-top: 8px;
+    width: 320px;
+    z-index: 50px;
+  }
+}
+
+/* Notification Dropdown Styles */
+.notification-dropdown-container {
+  animation: slideDown 0.2s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.2s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Custom Scrollbar for Notification List */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.3);
+  border-radius: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.5);
+  border-radius: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.7);
+}
+
+/* Notification Item Hover Effect */
+.notification-item {
+  transition: all 0.2s ease;
+}
+
+.notification-item:hover {
+  transform: translateX(2px);
+}
+
+/* Line Clamp Utility */
+.line-clamp-1 {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Pulse Animation for Badge */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+/* Ensure Leaflet map doesn't overlap navbar */
+.leaflet-container {
+  z-index: 1 !important;
+}
+
+.leaflet-pane {
+  z-index: 1 !important;
+}
+
+.leaflet-top,
+.leaflet-bottom {
+  z-index: 10 !important;
+}
+
+/* Ensure notification dropdown stays above map */
+.notification-dropdown-container {
+  z-index: 9999 !important;
+}
+
+/* Ensure navbar stays above everything */
+#main-navbar {
+  z-index: 50 !important;
+}
+
+/* Sidebar Scrollbar Styling */
+.custom-sidebar-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-sidebar-scrollbar::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 3px;
+}
+
+.custom-sidebar-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 3px;
+  transition: background 0.2s ease;
+}
+
+.custom-sidebar-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Light theme sidebar scrollbar */
+[data-theme="light"] .custom-sidebar-scrollbar::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="light"] .custom-sidebar-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+[data-theme="light"] .custom-sidebar-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* Fix backdrop z-index */
+.nav-backdrop {
+  z-index: 40 !important;
+}
