@@ -1,0 +1,234 @@
+/* ========== Common Component Styles ========== */
+
+.component-body {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  padding-left: 20px;
+  padding-right: 20px;
+  gap: 24px;
+  padding-top: 16px;
+  min-height: calc(100vh - 70px);
+  background-color: transparent;
+}
+
+[data-theme="light"] .component-body {
+  background-color: #f8f9fa;
+}
+
+.page-header {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  background: linear-gradient(135deg, #ffffff 0%, rgba(255, 255, 255, 0.8) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 8px;
+}
+
+[data-theme="light"] .page-header {
+  background: linear-gradient(135deg, #111827 0%, #374151 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* React Tabs Styling */
+.react-tabs__tab--selected {
+  border: none !important;
+  border-bottom: 3px solid #E6FC5F !important;
+  color: #E6FC5F !important;
+  background: transparent !important;
+  font-weight: 600 !important;
+}
+
+.react-tabs__tab:focus::after {
+  background: transparent !important;
+}
+
+.react-tabs__tab {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 120px !important;
+  border-start-start-radius: 8px !important;
+  border-start-end-radius: 8px !important;
+  padding: 1rem !important;
+  cursor: pointer !important;
+  user-select: none !important;
+  transition: all 0.2s ease !important;
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.react-tabs__tab:hover {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.react-tabs__tab-list {
+  display: flex !important;
+  flex-direction: row !important;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1) !important;
+  gap: 4px !important;
+}
+
+[data-theme="light"] .react-tabs__tab {
+  color: rgba(0, 0, 0, 0.6) !important;
+}
+
+[data-theme="light"] .react-tabs__tab:hover {
+  background-color: rgba(0, 0, 0, 0.05) !important;
+  color: rgba(0, 0, 0, 0.9) !important;
+}
+
+[data-theme="light"] .react-tabs__tab--selected {
+  border-bottom-color: #6366f1 !important;
+  color: #6366f1 !important;
+}
+
+[data-theme="light"] .react-tabs__tab-list {
+  border-bottom-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Animations */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes gradient {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.5s ease-out;
+}
+
+.animate-slide-down {
+  animation: slide-down 0.3s ease-out;
+}
+
+.animate-gradient {
+  background-size: 200% auto;
+  animation: gradient 3s ease infinite;
+}
+
+/* Responsive Breakpoints */
+@media (min-width: 300px) {
+  .component-body {
+    padding-left: 16px;
+    padding-right: 16px;
+    gap: 20px;
+  }
+  
+  .page-header {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+@media (min-width: 768px) {
+  .component-body {
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 24px;
+  }
+  
+  .page-header {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .component-body {
+    padding-left: 24px;
+    padding-right: 24px;
+    gap: 28px;
+  }
+  
+  .page-header {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .component-body {
+    padding-left: 32px;
+    padding-right: 32px;
+    gap: 32px;
+  }
+  
+  .page-header {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+
+@media (min-width: 2500px) {
+  .component-body {
+    padding-left: 40px;
+    padding-right: 40px;
+    gap: 40px;
+    padding-top: 40px;
+  }
+  
+  .page-header {
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+
+/* ========== Additional Light Theme Overrides ========== */
+[data-theme="light"] input,
+[data-theme="light"] select {
+  background-color: rgba(0, 0, 0, 0.02);
+  border-color: rgba(0, 0, 0, 0.15);
+  color: #111827;
+}
+
+[data-theme="light"] input:focus,
+[data-theme="light"] select:focus {
+  background-color: rgba(0, 0, 0, 0.03);
+  border-color: #6366f1;
+}
+
+[data-theme="light"] button.disabled:disabled,
+[data-theme="light"] button:disabled {
+  opacity: 0.5;
+}
+
+[data-theme="light"] .text-gray-400 {
+  color: #6b7280 !important;
+}
+
+[data-theme="light"] .border-gray-600,
+[data-theme="light"] .border-gray-700 {
+  border-color: rgba(0, 0, 0, 0.15) !important;
+}

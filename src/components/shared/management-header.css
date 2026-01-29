@@ -1,0 +1,352 @@
+/* Management Header Styles */
+.management-container {
+  padding: 0 24px 24px 24px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.management-title-section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.management-page-header {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+  margin: 0;
+  padding: 0;
+}
+
+[data-theme="light"] .management-page-header {
+  color: #111827;
+}
+
+[data-theme="dark"] .management-page-header {
+  color: #ffffff;
+}
+
+/* Controls Wrapper */
+.management-controls-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+  width: 100%;
+}
+
+/* Search Input */
+.management-search-wrapper {
+  position: relative;
+  flex: 1;
+  min-width: 250px;
+  max-width: 400px;
+}
+
+.management-search-input {
+  width: 100%;
+  padding: 10px 20px 10px 15px;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid;
+  font-size: 14px;
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+[data-theme="dark"] .management-search-input {
+  background-color: #1e293b;
+  border-color: #475569;
+  color: #f1f5f9;
+}
+
+[data-theme="dark"] .management-search-input::placeholder {
+  color: #94a3b8;
+}
+
+[data-theme="dark"] .management-search-input:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+[data-theme="light"] .management-search-input {
+  background-color: #ffffff;
+  border-color: #cbd5e1;
+  color: #0f172a;
+}
+
+[data-theme="light"] .management-search-input::placeholder {
+  color: #94a3b8;
+}
+
+[data-theme="light"] .management-search-input:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+.management-search-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+/* Filter Button */
+.management-filter-wrapper {
+  position: relative;
+}
+
+.management-filter-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  min-width: 130px;
+  padding: 10px 15px;
+  height: 40px;
+  border: 1px solid;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+[data-theme="dark"] .management-filter-button {
+  background-color: #1e293b;
+  border-color: #475569;
+  color: #f1f5f9;
+}
+
+[data-theme="dark"] .management-filter-button:hover {
+  background-color: #334155;
+  border-color: #64748b;
+}
+
+[data-theme="light"] .management-filter-button {
+  background-color: #ffffff;
+  border-color: #cbd5e1;
+  color: #0f172a;
+}
+
+[data-theme="light"] .management-filter-button:hover {
+  background-color: #f1f5f9;
+  border-color: #94a3b8;
+}
+
+.management-filter-label {
+  font-weight: 500;
+}
+
+.management-filter-icon {
+  width: 18px;
+  height: 18px;
+}
+
+/* Filter Dropdown */
+.management-filter-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin-top: 8px;
+  border: 1px solid;
+  border-radius: 8px;
+  min-width: 130px;
+  z-index: 100;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  animation: slideDown 0.2s ease-out;
+  overflow: hidden;
+}
+
+[data-theme="dark"] .management-filter-dropdown {
+  background-color: #0f172a;
+  border-color: #334155;
+}
+
+[data-theme="light"] .management-filter-dropdown {
+  background-color: #ffffff;
+  border-color: #cbd5e1;
+}
+
+.management-filter-option {
+  padding: 10px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-bottom: 1px solid;
+}
+
+[data-theme="dark"] .management-filter-option {
+  color: #f1f5f9;
+  border-color: #334155;
+}
+
+[data-theme="dark"] .management-filter-option:hover {
+  background-color: #334155;
+}
+
+[data-theme="dark"] .management-filter-option:last-child {
+  border-bottom: none;
+}
+
+[data-theme="light"] .management-filter-option {
+  color: #0f172a;
+  border-color: #e2e8f0;
+}
+
+[data-theme="light"] .management-filter-option:hover {
+  background-color: #f1f5f9;
+}
+
+[data-theme="light"] .management-filter-option:last-child {
+  border-bottom: none;
+}
+
+.management-filter-selected {
+  font-weight: 600;
+}
+
+[data-theme="dark"] .management-filter-selected {
+  background-color: #334155;
+  color: #6366f1;
+}
+
+[data-theme="light"] .management-filter-selected {
+  background-color: #dbeafe;
+  color: #0f172a;
+}
+
+/* Refresh Button */
+.management-refresh-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 1px solid;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background-color: transparent;
+}
+
+[data-theme="dark"] .management-refresh-button {
+  border-color: #475569;
+  color: #f1f5f9;
+}
+
+[data-theme="dark"] .management-refresh-button:hover {
+  background-color: #334155;
+  border-color: #64748b;
+}
+
+[data-theme="light"] .management-refresh-button {
+  border-color: #cbd5e1;
+  color: #0f172a;
+}
+
+[data-theme="light"] .management-refresh-button:hover {
+  background-color: #f1f5f9;
+  border-color: #94a3b8;
+}
+
+/* Add Button */
+.management-add-button {
+  padding: 10px 20px;
+  height: 40px;
+  font-weight: 600;
+  font-size: 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background-color: #76df23;
+  color: white;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(118, 223, 35, 0.3);
+}
+
+.management-add-button:hover {
+  background-color: #6acc1f;
+  box-shadow: 0 4px 12px rgba(118, 223, 35, 0.4);
+  transform: translateY(-1px);
+}
+
+.management-add-button:active {
+  transform: translateY(0);
+}
+
+/* Animations */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .management-controls-wrapper {
+    flex-direction: row;
+  }
+
+  .management-search-wrapper {
+    min-width: 200px;
+    max-width: 100%;
+    flex: 0 1 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .management-container {
+    padding: 0 16px 16px 16px;
+    gap: 16px;
+  }
+
+  .management-page-header {
+    font-size: 24px;
+  }
+
+  .management-controls-wrapper {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .management-search-wrapper {
+    width: 100%;
+    min-width: auto;
+    max-width: 100%;
+  }
+
+  .management-filter-button {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .management-add-button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .management-container {
+    padding: 0 12px 12px 12px;
+  }
+
+  .management-page-header {
+    font-size: 20px;
+  }
+}

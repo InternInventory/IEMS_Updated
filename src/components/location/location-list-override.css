@@ -1,0 +1,21 @@
+/* Generic override for all management table heads in light mode */
+[data-theme="light"] .location-list-thead,
+[data-theme="light"] .client-list-thead,
+[data-theme="light"] .device-management-thead,
+[data-theme="light"] .system-management-thead,
+[data-theme="light"] table .location-list-thead,
+[data-theme="light"] table .client-list-thead,
+[data-theme="light"] table .device-management-thead,
+[data-theme="light"] table .system-management-thead,
+[data-theme="light"] table.location-list-table thead.location-list-thead,
+[data-theme="light"] table.client-list-table thead.client-list-thead,
+[data-theme="light"] table.device-management-table thead.device-management-thead,
+[data-theme="light"] table.system-management-table thead.system-management-thead {
+  background:#3A5A7A !important;
+  color: #fff !important;
+}
+/* Force table head color for location list with highest specificity */
+[data-theme="light"] .location-list-thead, [data-theme="light"] table .location-list-thead, [data-theme="light"] table.location-list-table thead.location-list-thead, .location-list-thead {
+  background:#3A5A7A !important;
+  color: #fff !important;
+}
