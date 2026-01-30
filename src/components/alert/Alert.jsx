@@ -773,17 +773,18 @@ const Alert = () => {
     /> */}
 
         {/* Priority Filter */}
-        <select
-          value={selectedPriority}
-          onChange={(e) => setSelectedPriority(e.target.value)}
-          className="selection-item pr-10 text-xsm"
-        >
-          <option value="">All Priorities</option>
-          <option value="low">Low</option>
-          <option value="medium">Medium</option>
-          <option value="high">High</option>
-          <option value="critical">Critical</option>
-        </select>
+       <select
+  value={selectedPriority}
+  onChange={(e) => setSelectedPriority(e.target.value)}
+  className="selection-item pr-10 text-xsm"
+  style={{ color: "#000" }}
+>
+  <option value="" style={{ color: "#000" }}>All Priorities</option>
+  <option value="" style={{ color: "#000" }}>Low</option>
+  <option value="" style={{ color: "#000" }}>Medium</option>
+  <option value="" style={{ color: "#000" }}>High</option>
+  <option value="" style={{ color: "#000" }}>Critical</option>
+</select>
 
         {/* Clear All Filters Button */}
         {(searchTerm ||
@@ -853,13 +854,9 @@ const Alert = () => {
       <div
         className="alert-table-container hide-scrollbar  center-table"
         style={{
-          width: "100vw",
+          width: "100%",
           maxWidth: "100%",
-          marginLeft: "-920px",
           marginTop: "-20px",
-          left: "50%",
-          position: "relative",
-          right: "50%",
           overflowX: "auto",
           overflowY: "visible",
         }}
