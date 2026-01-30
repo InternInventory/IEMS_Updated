@@ -1518,11 +1518,11 @@ const yearlySummary = calculateYearlySummary();
           : { backgroundColor: '#f0f2f5' } // dull white for light mode section bg
       }
     >
-      <div><h1 className="page-header select-none ml-1">{title}</h1></div>
+      <div><h1 className="page-header select-none ml-1 mt-0">{title}</h1></div>
       
 
       {/* Cards */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-5 gap-4 w-full mb-2">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-5 gap-4 w-full mb-2 pb-2 -mt-4">
         {cards.map((c, i) => (
           <div key={i} className="w-full">
             <div
@@ -1557,7 +1557,7 @@ const yearlySummary = calculateYearlySummary();
       </div>
 
       {/* Efficiency Insights and Location Map */}
-      <div className="w-full -mt-2 grid grid-cols-1 lg:grid-cols-2 gap-3">
+      <div className="w-full -mt-5 grid grid-cols-1 lg:grid-cols-2 gap-3">
 
       {/* Location Map */}
 <div
@@ -1830,7 +1830,7 @@ const yearlySummary = calculateYearlySummary();
 
       </div>
       {/* Energy Matrix - Combined Energy Analytics */}
-      <div className={`w-full ${isDarkMode ? 'bg-[#0F172B] text-white border-[#1e293b]' : 'bg-white text-black border-gray-200'} rounded-xl border p-6`}>
+      <div className={`w-full -mt-3 ${isDarkMode ? 'bg-[#0F172B] text-white border-[#1e293b]' : 'bg-white text-black border-gray-200'} rounded-xl border p-6`}>
         <div className="relative flex justify-between items-center mb-6">
           {/* Left: Title */}
           <h2 className="text-2xl font-bold flex items-center gap-3">
@@ -2260,7 +2260,7 @@ const yearlySummary = calculateYearlySummary();
       
       {/* Device Distribution and Alerts */}
       {/* Device Distribution and Alerts */}
- <div className="w-full mt-2 grid grid-cols-1 lg:grid-cols-2 gap-3">
+ <div className="w-full -mt-2 grid grid-cols-1 lg:grid-cols-2 gap-3">
   {/* Device Distribution */}
   <div className={`${isDarkMode ? 'bg-[#0F172B] text-white border-[#1e293b]' : 'bg-white text-black border-gray-200'} rounded-xl border p-6 shadow-lg hover:shadow-xl transition-all duration-300 h-[500px] flex flex-col`}>
     <div className="flex items-center justify-between mb-4 flex-shrink-0">
