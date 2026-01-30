@@ -458,6 +458,7 @@ const Alert = () => {
       return;
     }
 
+
     const headers = [
       "Client name",
       "Device Type",
@@ -467,8 +468,6 @@ const Alert = () => {
       "Assign To",
       "Priority",
       "Raised On",
-      "Closed On",
-      "Due Days",
       "Status",
     ];
 
@@ -484,8 +483,6 @@ const Alert = () => {
         r.assignTo,
         r.priority,
         r.raisedOn,
-        r.closedOn,
-        r.dueDays,
         r.status,
       ];
 
@@ -776,14 +773,24 @@ const Alert = () => {
        <select
   value={selectedPriority}
   onChange={(e) => setSelectedPriority(e.target.value)}
-  className="selection-item pr-10 text-xsm"
-  style={{ color: "#000" }}
+className="pr-10 text-xsm"
+style={{
+  color: '#000000',                 // ✅ black text
+  padding: '10px 20px',
+  backgroundColor: '#ffffff',        // ✅ fixed camelCase
+  border: '1px solid #475569',
+  width: '100%',
+  borderRadius: '9999px',
+  transition: 'all 0.2s ease',
+  cursor: 'pointer',
+}}
+
 >
   <option value="" style={{ color: "#000" }}>All Priorities</option>
-  <option value="" style={{ color: "#000" }}>Low</option>
-  <option value="" style={{ color: "#000" }}>Medium</option>
-  <option value="" style={{ color: "#000" }}>High</option>
-  <option value="" style={{ color: "#000" }}>Critical</option>
+  <option value="low" style={{ color: "#000" }}>Low</option>
+  <option value="medium" style={{ color: "#000" }}>Medium</option>
+  <option value="high" style={{ color: "#000" }}>High</option>
+  <option value="critical" style={{ color: "#000" }}>Critical</option>
 </select>
 
         {/* Clear All Filters Button */}
@@ -928,8 +935,8 @@ const Alert = () => {
                     <th className="alert-table-header">Priority</th>
                     <th className="alert-table-header">Status</th>
                     <th className="alert-table-header">Assign To</th>
-                    <th className="alert-table-header">Due Days</th>
-                    <th className="alert-table-header">Closed On</th>
+                    {/* <th className="alert-table-header">Due Days</th> */}
+                    {/* <th className="alert-table-header">Closed On</th> */}
                   </tr>
                 </thead>
               </table>
@@ -1024,15 +1031,15 @@ const Alert = () => {
                             <AlertStatusBadge status={a.status} />
                           </td>
                           <td className="alert-table-cell">{a.assignTo}</td>
-                          <td className="alert-table-cell">{a.dueDays}</td>
-                          <td className="alert-table-cell">{a.closedOn}</td>
+                          {/* <td className="alert-table-cell">{a.dueDays}</td> */}
+                          {/* <td className="alert-table-cell">{a.closedOn}</td> */}
                         </tr>
                       );
                     })
                   ) : (
                     <tr>
                       <td
-                        colSpan="11"
+                        colSpan="9"
                         className="text-center text-gray-400 py-6"
                       >
                         No alerts match the current filters.
@@ -1043,7 +1050,7 @@ const Alert = () => {
                 {/* ==== PAGINATION ==== */}
                 <tfoot className="alert-table-footer border-spacing-x-5 border-spacing-y-2 select-none">
                   <tr>
-                    <td colSpan="11" className="p-4">
+                    <td colSpan="9" className="p-4">
                       <div className="flex flex-col md:flex-row justify-between items-stretch md:items-center gap-4 w-full">
                         <div className="flex items-center gap-2 text-white">
                           <label htmlFor="itemsPerPage">Items/page:</label>
