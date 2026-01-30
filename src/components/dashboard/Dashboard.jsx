@@ -801,7 +801,7 @@ useEffect(() => {
       case "Subscribers":
         return navigate("/");
       case "Alerts":
-        return navigate("/alert");
+        return navigate("/alerts");
       default:
         return;
     }
@@ -809,7 +809,7 @@ useEffect(() => {
 
   // Handle alert chart click to navigate to alerts page
   const handleAlertChartClick = () => {
-    navigate("/alert");
+    navigate("/alerts");
   };
 
   // Handle device distribution click
@@ -2484,7 +2484,7 @@ const yearlySummary = calculateYearlySummary();
         </div>
 
         <button 
-          onClick={() => navigate('/alert')}
+          onClick={() => navigate('/alerts')}
           className="w-full py-3 px-4 flex items-center justify-center gap-3 rounded-xl text-base font-semibold transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] group flex-shrink-0"
           style={{
             backgroundColor: isDarkMode ? '#1e293b' : '#f1f5f9',

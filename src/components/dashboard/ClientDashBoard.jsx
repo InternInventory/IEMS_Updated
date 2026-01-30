@@ -1271,7 +1271,7 @@ else {
         return navigate(`/user?clientId=${clientId}`);
       case "Total Alerts":
       case "Critical Alerts":
-        return navigate("/alert");
+        return navigate("/alerts");
       default:
         return;
     }

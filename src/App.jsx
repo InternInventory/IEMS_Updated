@@ -16,6 +16,7 @@ import 'react-toastify/dist/ReactToastify.css';
 // import EditClient from "./components/client/EditClient";
 import Alert from "./components/alert/Alert";
 import AlertsLog from "./components/alert/AlertsLog";
+import AlertDetail from "./components/alert/AlertDetail";
 import Notifications from "./components/notification/Notifications"; 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Location from "./components/location/Location";
@@ -118,6 +119,8 @@ export default function App() {
           <Route path="create-user" element={<CreateUser />} />
           <Route path="alerts" element={<Alert />} />
           <Route path="alerts-log" element={<AlertsLog />} />
+          <Route path="alerts/:alertId" element={<AlertDetail />} />
+
           <Route path="notifications" element={<Notifications />} />
           {/* <Route path="device-list" element={<Devicelist />} /> */}
          

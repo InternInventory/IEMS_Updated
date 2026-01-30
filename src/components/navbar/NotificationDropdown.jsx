@@ -112,7 +112,7 @@ const NotificationDropdown = ({ isOpen, onClose, unreadCount, onUpdateCount }) =
       navigate(`/alerts-log`);
     } else if (notification.source === 'device_alert' || notification.alert_id) {
       // Navigate to device alerts
-      navigate(`/alert`);
+      navigate(`/alerts`);
     }
     onClose();
   };

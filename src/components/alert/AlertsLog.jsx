@@ -5,6 +5,7 @@ import {
 } from "react-icons/io";
 import { IoSearchOutline } from "react-icons/io5";
 import { RiArrowDropDownLine } from "react-icons/ri";
+  import { FiDownload } from "react-icons/fi";
 import {
   TfiControlSkipForward,
   TfiControlSkipBackward,
@@ -436,11 +437,20 @@ useEffect(() => {
     <h1 className="page-header select-none">Alerts Logs</h1>
 
     {/* Alerts Logs Button - Perfect Top-Right Position */}
-    <button
-      onClick={() => navigate("/alert")}
-      className="btn-primary flex items-center gap-2.5 rounded-full shadow-lg hover:shadow-xl"
-    >
-     <svg
+   <button
+  onClick={() => navigate("/alerts")}
+ className="flex items-center gap-2.5 rounded-full shadow-lg hover:shadow-xl"
+  style={{
+    backgroundColor: "#76df23",
+    color: "black",
+    padding: "10px 16px",
+    fontSize: "14px",
+    border: "1px solid #76df23",
+    cursor: "pointer",
+    transition: "all 0.2s ease",
+  }}
+>
+    <svg
   className="w-4 h-4"
   fill="none"
   stroke="currentColor"
@@ -453,14 +463,12 @@ useEffect(() => {
     d="M10 19l-7-7 7-7M3 12h18"
   />
 </svg>
-
-
-      Back to Alerts
-    </button>
+  back to alerts
+</button>
   </div>
 
       {/* Device Cards */}
-      <div className="grid w-full card-container mb-8">
+      {/* <div className="grid w-full card-container mb-8">
         {deviceCards.length > 0 ? (
           deviceCards.map((c, i) => {
             const isSelected = selectedDeviceType === c.label;
@@ -489,7 +497,7 @@ useEffect(() => {
             No device data available.
           </div>
         )}
-      </div>
+      </div> */}
 
      {/* Search & Filters – ONE ROW */}
 <div className="mb-6 w-full">
@@ -608,22 +616,25 @@ useEffect(() => {
         Clear Filters
       </button>
     )}
-
-    {/* Download Button */}
     {filteredAlerts.length > 0 && (
-      <button
-        onClick={exportLogs}
-        className="download-alert-button flex items-center gap-2 whitespace-nowrap text-sm ml-auto"
-      >
-        <img src="src/assets/img/alerts/excel.svg" alt="excel" className="w-4 h-4" />
-        Download Logs
-      </button>
-    )}
+  <div
+    className="w-full flex justify-end mb-4"
+    style={{ marginLeft: "-80%" }}
+  >
+  <button
+  onClick={exportLogs}
+  title="Download logs"
+  className="download-icon-btn"
+>
+  <FiDownload size={24} />
+</button>
   </div>
-</div>  
+)}
+</div>
+</div>
+{/* Download Row (separate line below filters) */}
 
-
-      {/* Table - Only 4 Columns */}
+    {/* Table - Only 4 Columns */}
       <div className="alert-table-container" style={{ width: '100%', overflowX: 'auto' }}>
         {filteredAlerts.length === 0 ? (
           <div className="text-center p-10 text-gray-400">
